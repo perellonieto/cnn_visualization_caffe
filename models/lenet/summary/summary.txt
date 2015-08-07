@@ -1,0 +1,28 @@
+Architecture of lenet network
+---------------------
+Convolution
+Pooling
+Convolution
+Pooling
+InnerProduct
+ReLU
+InnerProduct
+Softmax
+
+Feature map sizes (Blobs)
+-------------------------
+data = 	(1, 1, 28, 28)
+conv1 = 	(1, 20, 24, 24)
+pool1 = 	(1, 20, 12, 12)
+conv2 = 	(1, 50, 8, 8)
+pool2 = 	(1, 50, 4, 4)
+ip1 = 	(1, 500)
+ip2 = 	(1, 10)
+prob = 	(1, 10)
+
+Parameter shape
+---------------
+conv1 = (20, 1, 5, 5) 	(min,max) = (-0.51,0.68)
+conv2 = (50, 20, 5, 5) 	(min,max) = (-0.18,0.23)
+ip1 = (500, 800) 	(min,max) = (-0.08,0.09)
+ip2 = (10, 500) 	(min,max) = (-0.28,0.28)
